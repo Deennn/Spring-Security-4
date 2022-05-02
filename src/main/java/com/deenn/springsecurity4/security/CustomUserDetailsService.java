@@ -2,6 +2,7 @@ package com.deenn.springsecurity4.security;
 
 import com.deenn.springsecurity4.entity.Role;
 import com.deenn.springsecurity4.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,11 +16,12 @@ import java.util.Collections;
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 
-     private UserRepository userRepository;
 
-    public CustomUserDetailsService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+//     private final UserRepository userRepository;
+
+//    public CustomUserDetailsService(UserRepository userRepository) {
+//        this.userRepository = userRepository;
+//    }
 
 
     @Override

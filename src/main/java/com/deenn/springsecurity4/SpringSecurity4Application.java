@@ -12,7 +12,7 @@ public class SpringSecurity4Application {
 //        Role role = null;
 //        System.out.println(String.valueOf(Role.valueOf()));
 
-        System.out.println(Role.valueOf());
+//        System.out.println(Role.valueOf());
     }
 
 }
