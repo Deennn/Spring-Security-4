@@ -23,6 +23,6 @@ public class StudentController {
     public Student getStudent(@PathVariable Integer studentId) {
             return STUDENTS.stream().filter(student -> student.getStudentId().equals(studentId)).findFirst().orElseThrow(
                     ()-> new IllegalStateException("Student " + studentId + " does not exist")
-            );
+            )
     }
 }
