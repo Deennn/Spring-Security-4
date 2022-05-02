@@ -24,5 +24,6 @@ public class StudentController {
             return STUDENTS.stream().filter(student -> student.getStudentId().equals(studentId)).findFirst().orElseThrow(
                     ()-> new IllegalStateException("Student " + studentId + " does not exist")
             );
+//            fixed the error
     }
 }
